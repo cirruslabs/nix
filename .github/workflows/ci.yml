@@ -107,7 +107,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: ["ghcr.io/cirruslabs/ubuntu-runner-arm64:22.04-md", "ghcr.io/cirruslabs/ubuntu-runner-amd64:22.04-md"]
+        os: ["ghcr.io/cirruslabs/ubuntu-runner-amd64:22.04"]
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
